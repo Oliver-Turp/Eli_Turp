@@ -1,0 +1,70 @@
+/* BACKGROUNDS */
+
+.nav__bg- {
+  padding-bottom: 10vh;
+}
+
+.nav__bg-reviews {
+  background-image: url(../assets/images/reviewsBackground.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  padding-bottom: 10vh;
+}
+
+.nav__bg-youtube {
+  background-image: url(../assets/images/youTubeBackground.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding-bottom: 10vh;
+}
+
+.nav__bg-photography {
+  background-image: url(../assets/images/photographyBackground.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding-bottom: 10vh;
+}
+
+/* NAV STYLES */
+
+.nav__header {
+}
+
+.nav__footer-wrap {
+  width: 100vw;
+  height: auto;
+}
+
+.nav__footer-socials {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 75vw;
+  margin: 0 auto;
+}
+
+.nav__footer-item {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding: 0 2vw;
+}
+
+.nav__footer-item a {
+  width: 100px;
+  height: 100px;
+}
+
+.nav__footer-item a:hover + p {
+  text-decoration: underline;
+}
+
+.nav__footer-item img {
+  white-space: nowrap;
+  height: 100%;
+  width: 100%;
+}

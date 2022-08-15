@@ -1,0 +1,27 @@
+.reviews__wrap {
+  padding: 10vh 0;
+}
+
+.reviews__wrap h1 {
+  color: white;
+  text-shadow: 3px 3px 3px black;
+}
+
+.reviews__grid {
+  max-width: 75vw;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.reviews__item {
+  margin: 2vh;
+  height: 500px;
+  width: auto;
+}
+
+.reviews__item img {
+  height: 100%;
+  width: 100%;
+}

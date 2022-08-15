@@ -1,0 +1,39 @@
+.photo__wrap {
+  padding: 10vh 0;
+  max-width: 75vw;
+  margin: auto;
+  position: relative;
+}
+
+.photo__thumbnail-wrap h3 {
+  text-align: center;
+  text-transform: capitalize;
+  font-size: 35px;
+  padding-bottom: 3vh;
+}
+
+.photo__thumbnail-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.photo__thumbnail-item {
+  padding: 1vh;
+}
+
+.photo__image {
+  height: 200px;
+  width: auto;
+  transition: outline 0.1s linear;
+}
+
+.photo__image:hover {
+  outline: 5px solid black;
+}
+
+.photo__clickedImage {
+  width: 50vw;
+  height: 50vh;
+  position: absolute;
+}
