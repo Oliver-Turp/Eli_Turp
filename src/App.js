@@ -31,10 +31,10 @@ function App() {
           <Route path="/" element={<Nav />}>
             <Route index element={<Home />} />
             <Route path="photography" element={<Photography />}>
-              <Route
-                path="photography/:photoName"
+              {/* <Route
+                path=":imgName"
                 element={<FSPhotography />}
-              />
+              /> */}
             </Route>
             <Route path="reviews" element={<Reviews />} />
             <Route path="youtube" element={<YouTube />} />

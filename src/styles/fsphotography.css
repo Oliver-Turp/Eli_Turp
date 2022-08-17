@@ -1,0 +1,36 @@
+.FSphoto__wrap {
+    position: fixed;
+    z-index: 3;
+    inset: 0;
+    background-color: rgba(3, 3, 3, 0.4);
+    /* background-color: green; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.5s ease-in-out;
+    transform: scale(0);
+    opacity: 0;
+
+}
+
+.FSphoto__img-wrapper {
+    position: fixed;
+    inset: 0;
+    overflow: auto;
+    /* background-color: green; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.FSphoto__img {
+    position: relative;
+    z-index: 5;
+    width: min(25rem);
+}
+
+.show{
+    transform: scale(1);
+    opacity: 1;
+}

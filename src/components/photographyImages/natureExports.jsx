@@ -31,25 +31,36 @@ import Photo5 from "./nature/0005.jpg";
 // import Photo31 from "./nature/0031.jpg";
 // import Photo32 from "./nature/0032.jpg";
 
-export default [
+const naturePhotos = [
   {
     name: "NaturePhoto1",
     src: Photo1,
+    id: 1
   },
   {
     name: "NaturePhoto2",
     src: Photo2,
+    id: 2
+
   },
   {
     name: "NaturePhoto3",
     src: Photo3,
+    id: 3
+
   },
   {
     name: "NaturePhoto4",
     src: Photo4,
+    id: 4
+
   },
   {
     name: "NaturePhoto5",
     src: Photo5,
+    id: 5
+
   },
 ];
+
+export default naturePhotos

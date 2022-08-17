@@ -1,5 +1,8 @@
 .reviews__wrap {
   padding: 10vh 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
 }
 
 .reviews__wrap h1 {
