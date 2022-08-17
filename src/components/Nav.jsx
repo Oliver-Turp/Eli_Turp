@@ -17,7 +17,7 @@ const Nav = () => {
           <div className="nav__footer-socials">
             <div className="nav__footer-item">
               <a
-                href="https://www.google.com/"
+                href="https://www.youtube.com/channel/UCmPB-vlqGBXEx5drz-0TLWg?sub_confirmation=1"
                 target="_blank"
                 rel="noreferrer"
               >
@@ -27,7 +27,7 @@ const Nav = () => {
             </div>
             <div className="nav__footer-item">
               <a
-                href="https://www.google.com/"
+                href="https://twitter.com/EliTurp"
                 target="_blank"
                 rel="noreferrer"
               >

@@ -29,6 +29,18 @@
   text-shadow: 1px 1px 1px black;
 }
 
+.nav__bg.contact {
+  background: url(../assets/images/contactBackground.png);
+  background-size: cover;
+  background-attachment: fixed;
+  animation: contact-bg 35s infinite;
+}
+
+.nav__bg.contact .nav__footer-item p {
+  color: white;
+  text-shadow: 1px 1px 1px black;
+}
+
 /* NAV STYLES */
 
 .nav__footer-wrap {
