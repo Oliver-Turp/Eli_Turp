@@ -39,8 +39,8 @@ const Photography = () => {
         </div>
       </div>
 
-      {/* Full screen version is always rendered but scaled to 0 (i.e is disappears). When isFullScreen is true, it is then scaled up*/}
-      <PhotographyContext.Provider value={{ fullScreenImg, setIsFullScreen , isFullScreen}}>
+      {/* Full screen version is always rendered but scaled to 0 (i.e it is made to shrink to nothing). When isFullScreen is true, it is then scaled up*/}
+      <PhotographyContext.Provider value={{ fullScreenImg, setIsFullScreen, isFullScreen }}>
         <FSPhotography />
       </PhotographyContext.Provider>
     </div>
