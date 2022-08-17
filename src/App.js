@@ -34,8 +34,8 @@ function App() {
             <Route path="reviews" element={<Reviews />} />
             <Route path="youtube" element={<YouTube />} />
             <Route path="contact" element={<Contact />} />
-            <Route path="error" element={<Error />} />
           </Route>
+          <Route path="error" element={<Error />} />
           <Route path="*" element={<Navigate to="error" replace />} />
         </Routes>
       </Wrapper>
