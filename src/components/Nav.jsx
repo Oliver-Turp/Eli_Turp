@@ -1,7 +1,7 @@
 import { Link, Outlet, useLocation } from "react-router-dom";
-import Temp from "../assets/images/Glados.jpg";
 import YT from "../assets/images/youtube.png";
 import Twitter from "../assets/images/twitter.png";
+import Contact from "../assets/images/contactMe.png";
 import "./nav.css";
 
 const Nav = () => {
@@ -10,7 +10,7 @@ const Nav = () => {
 
   return (
     <>
-      <div className={"nav__bg-" + location}>
+      <div className={"nav__bg " + location}>
         <div className="nav__header">Hamburger</div>
         <Outlet />
         <div className="nav__footer-wrap">
@@ -21,7 +21,7 @@ const Nav = () => {
                 target="_blank"
                 rel="noreferrer"
               >
-                <img src={YT} alt="temp" />
+                <img src={YT} alt="yt" />
               </a>
               <p>YouTube</p>
             </div>
@@ -31,18 +31,14 @@ const Nav = () => {
                 target="_blank"
                 rel="noreferrer"
               >
-                <img src={Twitter} alt="temp" />
+                <img src={Twitter} alt="twitter" />
               </a>
               <p>Twitter</p>
             </div>
             <div className="nav__footer-item">
-              <a
-                href="https://www.google.com/"
-                target="_blank"
-                rel="noreferrer"
-              >
-                <img src={Temp} alt="temp" />
-              </a>
+              <Link to="/contact">
+                <img src={Contact} alt="contact" />
+              </Link>
               <p>Contact Me</p>
             </div>
           </div>

@@ -4,18 +4,7 @@
 
 ###### Tasks's To Be Completed:
 
-- [ ]
-- [ ]
-- [ ]
-- [ ]
-- [ ]
-- [ ]
-- [ ]
-- [ ]
-- [ ]
-- [ ]
-- [ ]
-- [ ]
-- [ ]
-- [ ]
-- [ ]
+- [ ] Error Page
+- [ ] Contact Page
+- [ ] Hamburger Menu
+- [ ] Media Queries

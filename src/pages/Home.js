@@ -27,28 +27,19 @@ const Home = () => {
           <Link to="/youtube">
             <img src={Channel} alt="temp" />
           </Link>
-          <p>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Provident,
-            voluptatibus!
-          </p>
+          <p>channel updates and playlists</p>
         </div>
         <div className="home__content-center">
           <Link to="/reviews">
             <img src={Coffee} alt="temp" />
           </Link>
-          <p>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Provident,
-            voluptatibus!
-          </p>
+          <p>my journey as a self proclaimed coffee connoisseur</p>
         </div>
         <div className="home__content-right">
           <Link to="/photography">
             <img src={Camera} alt="temp" />
           </Link>
-          <p>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Provident,
-            voluptatibus!
-          </p>
+          <p>pictures of nature, architecture and more!</p>
         </div>
       </div>
     </div>

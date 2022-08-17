@@ -1,25 +1,42 @@
-import { Link, useParams } from "react-router-dom";
-import { Helmet } from "react-helmet";
+import { useContext, useRef, useEffect } from "react";
 
-import natureImages from "./natureExports";
+import { PhotographyContext } from "../../pages/Photography";
 
-import "../../styles/photography.css";
+import "../../styles/fsphotography.css";
 
 const FSPhotography = () => {
-  const { imgName } = useParams();
-  const img = natureImages.find((img) => img.name === imgName);
-  const { src } = img;
+  const { fullScreenImg, setIsFullScreen, isFullScreen } =
+    useContext(PhotographyContext);
+
+  const fullScreenImgRef = useRef(null);
+
+  useEffect(() => {
+    if (isFullScreen) {
+      fullScreenImgRef.current.classList.add("show");
+    }
+  }, [isFullScreen]);
 
   return (
-    <div className="FSphoto__wrap">
-      <Helmet>
-        <title>Eli Turp | FSPhotography</title>
-      </Helmet>
-      <div className="FSphoto__fullscreen">
-        <img src={src} alt="fullscreenImage" />
-        Test!
+    <>
+      <div
+        className="FSphoto__wrap"
+        ref={fullScreenImgRef}
+        onClick={(e) => {
+          fullScreenImgRef.current.classList.remove("show");
+          setIsFullScreen(false);
+        }}
+      >
+        <div className="FSphoto__fullscreen">
+          <div className="FSphoto__img-wrapper">
+            <img
+              src={fullScreenImg}
+              alt="fullscreenImage"
+              className="FSphoto__img"
+            />
+          </div>
+        </div>
       </div>
-    </div>
+    </>
   );
 };
 
