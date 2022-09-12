@@ -31,40 +31,28 @@ const Contact = () => {
             <input
               type="text"
               className="contact__input"
-              placeholder="John Smith"
+              placeholder="Your Name Here"
               name="name"
               required
             />
           </div>
 
-          <div className="contact__input-groups">
-            <div className="contact__input-group">
-              <label>email</label>
-              <input
-                type="email"
-                className="contact__input"
-                placeholder="someone@domain.com"
-                name="email"
-                required
-              />
-            </div>
-            <div className="contact__input-group">
-              <label>discord username & discriminator</label>
-              <input
-                type="text"
-                className="contact__input"
-                placeholder="Elon_Musk#6969"
-                name="discord"
-                pattern=".+(#)[0-9]{4}$"
-              />
-            </div>
+          <div className="contact__input-group">
+            <label>email</label>
+            <input
+              type="email"
+              className="contact__input"
+              placeholder="Your Email Here"
+              name="email"
+              required
+            />
           </div>
 
           <div className="contact__input-group">
             <label>message</label>
             <textarea
               className="contact__textarea"
-              placeholder="Bla Bla Bla"
+              placeholder="Your Message Here"
               name="message"
               required
             ></textarea>

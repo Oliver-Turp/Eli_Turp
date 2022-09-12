@@ -11,7 +11,7 @@
 
 .contact__wrap form {
   width: 70rem;
-  height: 50rem;
+  height: auto;
   background-color: rgba(255, 255, 255, 0.95);
   margin: auto;
   flex-direction: column;
@@ -31,16 +31,6 @@
   flex-direction: column;
   margin: 1rem 0;
   position: relative;
-}
-
-.contact__input-groups {
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-}
-
-.contact__input-groups .contact__input-group {
-  width: 48.5%;
 }
 
 .contact__input-group input,

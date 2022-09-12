@@ -1,4 +1,7 @@
 import { Link, Outlet, useLocation } from "react-router-dom";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faCaretDown } from "@fortawesome/free-solid-svg-icons";
+
 import YT from "../assets/images/youtube.png";
 import Twitter from "../assets/images/twitter.png";
 import Contact from "../assets/images/contactMe.png";
@@ -11,7 +14,20 @@ const Nav = () => {
   return (
     <>
       <div className={"nav__bg " + location}>
-        <div className="nav__header">Hamburger</div>
+        <div className="nav__menu-wrap">
+          <div className="nav__menu-hoverHere">
+            <p>
+              Pages <FontAwesomeIcon icon={faCaretDown} />
+            </p>
+            <div className="nav__menu_drop-wrap">
+              <Link to="/">Home</Link>
+              <Link to="youtube">Channel Updates</Link>
+              <Link to="reviews">Coffee Reviews</Link>
+              <Link to="photography">Photography</Link>
+              <Link to="contact">Contact Me</Link>
+            </div>
+          </div>
+        </div>
         <Outlet />
         <div className="nav__footer-wrap">
           <div className="nav__footer-socials">

@@ -38,11 +38,19 @@
   grid-template-columns: repeat(3, 1fr);
   grid-column-gap: 2rem;
   margin: 10vh 0;
+  flex-wrap: wrap;
+}
+
+.home__content-left, .home__content-center, .home__content-right {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
 }
 
 .home__content-wrap p {
   text-transform: capitalize;
   letter-spacing: 0.025rem;
+  font-size: 1.5rem;
 }
 
 .home__content-wrap img {
@@ -50,3 +58,18 @@
   height: auto;
   margin-bottom: 1vh;
 }
+
+@media screen and (max-width:1100px) {
+  .home__content-wrap {
+display: flex;
+flex-direction: column;
+  }
+  .home__content-wrap p {
+margin-bottom: 2.5rem;
+font-size: 1.7rem;
+  }
+  .home__content-wrap img {
+    max-width: 80vw;
+  }
+}
+

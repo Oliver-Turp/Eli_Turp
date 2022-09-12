@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import { Helmet, HelmetProvider } from "react-helmet-async";
 import Logo from "../assets/images/logoCircle.png";
-import Channel from "../assets/images/channel.png";
+import Channel from "../assets/images/test2.png";
 import Coffee from "../assets/images/coffee.png";
 import Camera from "../assets/images/camera.png";
 import "../styles/home.css";
