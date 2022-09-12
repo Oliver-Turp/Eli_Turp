@@ -16,3 +16,5 @@
 ###### Bugs
 - [ ] MonogDB Not mapping
 - [x] Channel Updates 'Recent Video' Lost styling
+- [ ] FS Photography too wide on media query
+- [ ] Hamburger Not Behaving on smaller screen sizes
