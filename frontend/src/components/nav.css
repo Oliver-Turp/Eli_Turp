@@ -1,0 +1,150 @@
+/* BACKGROUNDS */
+
+.nav__bg {
+  padding-bottom: 10vh;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  position: relative;
+}
+
+.nav__bg.reviews {
+  background-image: url(../assets/images/reviewsBackground.png);
+}
+
+.nav__bg.reviews .nav__footer-item p {
+    color: black;
+  font-weight: bolder;
+  font-size: 1.2rem;
+}
+
+.nav__bg.youtube {
+  background-image: url(../assets/images/youtubeBackground.png);
+}
+
+.nav__bg.youtube .nav__footer-item p {
+  color: white;
+  font-weight: bolder;
+  font-size: 1.2rem;
+}
+
+.nav__bg.photography {
+  background-image: url(../assets/images/photographyBackground.png);
+  background-position: bottom center;
+}
+
+.nav__bg.photography .nav__footer-item p {
+  color: white;
+  font-weight: bolder;
+  font-size: 1.2rem;
+}
+
+.nav__bg.contact {
+  background: url(../assets/images/contactBackground.png);
+  background-size: cover;
+  background-attachment: fixed;
+  animation: contact-bg 35s infinite;
+}
+
+.nav__bg.contact .nav__footer-item p {
+  color: white;
+  text-shadow: 1px 1px 1px black;
+}
+
+/* NAV STYLES */
+
+.nav__menu-wrap {
+  position: absolute;
+  right: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 2rem;
+  text-align: center;
+  width: max-content;
+  width: 10vw;
+}
+
+.nav__menu-hoverHere {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  align-items: center;
+  width: 100%;
+  cursor: pointer;
+}
+
+.nav__menu-hoverHere p {
+  font-size: 1.5rem;
+}
+
+.nav__menu-hoverHere:hover {
+  height: 10vh;
+}
+
+.nav__menu-hoverHere:hover .nav__menu_drop-wrap{
+  transform: rotateX(0);
+}
+
+.nav__menu_drop-wrap {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  position: absolute;
+  bottom: -210%;
+  background-color: black;
+  width: 100%;
+  transform: rotateX(90deg);
+}
+
+.nav__menu_drop-wrap a {
+  padding: 1rem;
+  color: white;
+  background-color: black;
+  width: 100%;
+}
+
+.nav__menu_drop-wrap a:hover {
+  background-color: lightgray;
+  color: black;
+}
+
+.nav__footer-wrap {
+  width: 100vw;
+  height: auto;
+}
+
+.nav__footer-socials {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 75vw;
+  margin: 0 auto;
+}
+
+.nav__footer-item {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding: 0 2vw;
+}
+
+.nav__footer-item a {
+  width: 100px;
+  height: 100px;
+}
+
+.nav__footer-item a:hover + p {
+  text-decoration: underline;
+}
+
+.nav__footer-item img {
+  white-space: nowrap;
+  height: 100%;
+  width: 100%;
+}

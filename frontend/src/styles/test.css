@@ -1,0 +1,64 @@
+.test-container {
+    height: 100vh;
+    width: 100vw;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+}
+
+.test-reviews {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.review-card {
+    outline: 2px solid black;
+    padding: 1rem 2rem;
+    max-width: 300px;
+    max-height: 500px;
+    height: 30vh;
+    text-transform: capitalize;
+    text-align: center;
+    margin: 1rem ;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.review-card img {
+    height: 65%;
+    width: 100%;
+}
+
+.review-card_top {
+    display: flex;
+    justify-content: space-between;
+    margin: .25rem 0;
+}
+
+.review-card #review-desc {
+    margin-top: .25rem;
+}
+
+.test-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.test-form input{
+margin: .5rem 4rem;
+padding: .5rem 0 .5rem .25rem;
+}
+
+.test-form #review__date {
+    text-transform: uppercase;
+}
+
+.test-form button {
+    margin: .5rem 4rem;
+    padding: 1rem 0;
+    font-size: 1.2rem;
+}
