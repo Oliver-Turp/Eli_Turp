@@ -1,0 +1,12 @@
+.starWrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh
+}
+
+.starIcon {
+    cursor: pointer;
+    transition: color 200ms;
+    font-size: 5rem;
+}

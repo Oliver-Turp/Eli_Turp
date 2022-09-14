@@ -15,6 +15,9 @@ import Contact from "./pages/Contact";
 import Error from "./pages/Error";
 import Nav from "./components/Nav";
 
+import Ratings from "./components/Ratings";
+import Test from "./pages/Test";
+
 function App() {
   const Wrapper = ({ children }) => {
     const location = useLocation();
@@ -28,6 +31,8 @@ function App() {
     <Router>
       <Wrapper>
         <Routes>
+          <Route path="/test" element={<Test />} />
+          <Route path="/ratings" element={<Ratings />} />
           <Route path="/" element={<Nav />}>
             <Route index element={<Home />} />
             <Route path="photography" element={<Photography />}></Route>
